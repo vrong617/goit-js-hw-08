@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+    
+}
+
+body {
+    max-width: calc(1128px + 24px + 24px + 24px + 24px);
+    padding: 48px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+ img {
+     display: block;
+     max-width: 100%;
+ }
+
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-image {
+    width: 360px;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+    
+    transition: all 0.3s ease;
+}
+
+.gallery-img:hover,
+.gallery-item:focus
+{
+    transform: scale(1.03);
+}
